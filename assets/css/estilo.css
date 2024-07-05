@@ -1,0 +1,118 @@
+/* Updated styles in style.css */
+
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar-nav > li > a:hover {
+    color: #f8f9fa;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #667eea;
+    margin-bottom: 30px;
+}
+
+.about i {
+    color: #667eea;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Portfolio styles */
+.portfolio .work img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio .work:hover img {
+    transform: scale(1.05);
+}
+
+/* Service styles */
+.service {
+    text-align: center;
+}
+
+.service i {
+    font-size: 48px;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact styles */
+.contact i {
+    font-size: 48px;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-logo img {
+    max-width: 120px;
+}
+
+.footer-follow a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-follow a:hover {
+    color: #667eea;
+}
