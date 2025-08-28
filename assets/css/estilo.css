@@ -47,6 +47,21 @@ header {
     color: #555;
 }
 
+  .about ul{
+    list-style-type: disc;         /* puntos */
+    list-style-position: outside;  /* punto fuera del bloque de texto */
+    margin: 0 0 0 1.2rem;          /* sangría para ver bien el punto */
+    padding: 0;
+  }
+
+  /* Justifica cada ítem y mejora legibilidad */
+  .about li{
+    text-align: justify; 
+    hyphens: auto;                 /* cortes de palabra donde aplique */
+    word-break: normal;
+    margin-bottom: .4rem;          /* espacio entre puntos */
+  }
+
 /* Portfolio styles */
 .portfolio .work img {
     border-radius: 10px;
