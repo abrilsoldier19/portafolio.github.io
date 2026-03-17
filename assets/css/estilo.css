@@ -1882,7 +1882,11 @@ header {
     font-weight:500;
 }
 
-.home-btns {
+.home-header {
+    margin-top: 25px;
+}
+
+.portafolio-btn {
     margin-top: 25px;
     background:#b916ff;
     color: white;
@@ -1891,7 +1895,23 @@ header {
     text-decoration: none;
     transition: background 0.3s, margin-top 0.3s;
 }
-.home-btns:hover {
+.portafolio-btn:hover {
+    margin-top: 25px;
+    background:#000000;
+    color: rgb(224, 112, 255);
+    padding: 10px 20px;
+    border-radius: 5px; }
+
+.cv-btn {
+    margin-top: 25px;
+    background:#b916ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, margin-top 0.3s;
+}
+.cv-btn:hover {
     margin-top: 25px;
     background:#000000;
     color: rgb(224, 112, 255);
