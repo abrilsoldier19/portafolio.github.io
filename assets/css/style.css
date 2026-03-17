@@ -1864,3 +1864,20 @@ header {
   left: auto;
   right: 20px;
 }
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.skills span{
+    background:#6c63ff;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:500;
+}
