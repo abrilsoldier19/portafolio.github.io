@@ -2,7 +2,7 @@ function loadCertificationsView() {
     fetch('views/certificaciones.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('content').innerHTML = html;
+            document.getElementById('contenido-certificaciones').innerHTML = html;
         })
         .catch(error => console.error('Error loading certifications:', error));
 }
