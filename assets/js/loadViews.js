@@ -21,3 +21,14 @@ function cargarExperienciaVista() {
 
 // Cargar automáticamente al abrir la página
 document.addEventListener('DOMContentLoaded', cargarExperienciaVista);
+
+function cargarEducacionVista() {
+    fetch('views/estudios.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('education').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading education:', error));
+    }
+
+document.addEventListener('DOMContentLoaded', cargarEducacionVista);
