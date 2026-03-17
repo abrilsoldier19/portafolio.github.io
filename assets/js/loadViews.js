@@ -1,5 +1,5 @@
 function loadCertificationsView() {
-    fetch('../views/certifications.html')
+    fetch('../views/certificaciones.html')
         .then(response => response.text())
         .then(html => {
             document.getElementById('certificates').innerHTML = html;
