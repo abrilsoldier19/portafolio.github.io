@@ -131,3 +131,36 @@ footer {
 .footer-follow a:hover {
     color: #667eea;
 }
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.skills span{
+    background:#6c63ff;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.home-btns {
+    margin-top: 25px;
+    background:#b916ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, margin-top 0.3s;
+}
+.home-btns:hover {
+    margin-top: 25px;
+    background:#000000;
+    color: rgb(224, 112, 255);
+    padding: 10px 20px;
+    border-radius: 5px; }
