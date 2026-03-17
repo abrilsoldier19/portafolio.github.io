@@ -9,3 +9,15 @@ function loadCertificationsView() {
 
 // Cargar automáticamente al abrir la página
 document.addEventListener('DOMContentLoaded', loadCertificationsView);
+
+function cargarExperienciaVista() {
+    fetch('views/experiencia.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('experience').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading experience:', error));
+}
+
+// Cargar automáticamente al abrir la página
+document.addEventListener('DOMContentLoaded', cargarExperienciaVista);
