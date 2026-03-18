@@ -120,6 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 message.style.display = "block";
                 form.reset();
 
+				 spawnBats();
+
                 setTimeout(() => {
                     window.location.href = "#contact";
                 }, 2000);
@@ -132,3 +134,28 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function spawnBats(){
+
+    const container = document.getElementById("batsContainer");
+
+    for(let i=0;i<10;i++){
+
+        const bat=document.createElement("div");
+        bat.classList.add("bat");
+
+        bat.innerHTML="🦇";
+
+        bat.style.left=Math.random()*window.innerWidth+"px";
+        bat.style.top=window.innerHeight+"px";
+
+        bat.style.animationDuration=(2+Math.random()*2)+"s";
+
+        container.appendChild(bat);
+
+        setTimeout(()=>{
+            bat.remove();
+        },3000);
+
+    }
+}
