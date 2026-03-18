@@ -48,7 +48,7 @@ Table OF Contents
 
 @font-face {
     font-family: "GothicFont";
-    src: url("fonts/gothic-valentine.ttf");
+    src: url("../fonts/gothic-valentine.ttf") format("truetype");
 }
 
 
