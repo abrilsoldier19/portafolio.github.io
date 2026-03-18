@@ -1903,7 +1903,7 @@ header {
 .portafolio-btn,
 .cv-btn {
     display: inline-block;
-    background: #b916ff;
+    background: #d81cfa;
     color: #fff;
     padding: 12px 22px;
     border-radius: 8px;
@@ -1923,4 +1923,63 @@ header {
 
 html {
   scroll-behavior: smooth;
+}
+
+#formMessage{
+    display:none;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+    padding:12px;
+
+    color:#b01cfa;
+    background:#000;
+    border:2px solid #b01cfa;
+    border-radius:10px;
+
+    text-shadow:0 0 8px #b01cfa;
+
+    position:relative;
+    overflow:hidden;
+}
+
+/* murciélagos */
+#formMessage::before,
+#formMessage::after{
+    content:"🦇";
+    position:absolute;
+    font-size:20px;
+    animation:fly 6s linear infinite;
+}
+
+#formMessage::before{
+    left:-30px;
+    top:5px;
+}
+
+#formMessage::after{
+    right:-30px;
+    bottom:5px;
+    animation-delay:3s;
+}
+
+@keyframes fly{
+    0%{
+        transform:translateX(0) rotate(0deg);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    50%{
+        transform:translateX(250px) rotate(10deg);
+    }
+    80%{
+        opacity:1;
+    }
+    100%{
+        transform:translateX(500px) rotate(-10deg);
+        opacity:0;
+    }
 }

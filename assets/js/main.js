@@ -94,3 +94,34 @@
 
 })(jQuery);
 
+
+
+const form = document.getElementById("contactForm");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+
+        message.style.display = "block";
+        form.reset();
+
+        setTimeout(() => {
+            window.location.href = "#contact";
+        }, 2000);
+
+    } else {
+        alert("Error al enviar el mensaje.");
+    }
+});
