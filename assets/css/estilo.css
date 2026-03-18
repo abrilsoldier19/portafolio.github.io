@@ -63,6 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 37px;
+    line-height: 1.2;
+    border-color: #b916ff;
 }
 
 h2 {
@@ -1556,6 +1558,12 @@ header {
 
   .home-content h1 {
 		font-size: 37px;
+}
+
+.home-content p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
 }
 
   .header-wrapper h2 {
