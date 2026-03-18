@@ -62,11 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 37px;
-    line-height: 1.2;
-    color: white;
-    -webkit-text-stroke:1px #b916ff;
-    text-shadow:0 0 10px rgba(185,22,255,0.5);
+    font-size:37px;
+    line-height:1.2;
+    color:white;
+    -webkit-text-stroke:0.7px #b916ff;
+    text-shadow:0 0 4px rgba(185,22,255,0.3);
 }
 
 h2 {
