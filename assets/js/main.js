@@ -96,32 +96,39 @@
 
 
 
-const form = document.getElementById("contactForm");
-const message = document.getElementById("formMessage");
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const message = document.getElementById("formMessage");
 
-form.addEventListener("submit", async function(event) {
-    event.preventDefault();
+    if (!form || !message) return;
 
-    const data = new FormData(form);
+    form.addEventListener("submit", async function(event) {
+        event.preventDefault();
 
-    const response = await fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: {
-            'Accept': 'application/json'
+        const data = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: data,
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (response.ok) {
+                message.style.display = "block";
+                form.reset();
+
+                setTimeout(() => {
+                    window.location.href = "#contact";
+                }, 2000);
+            } else {
+                alert("Error al enviar el mensaje.");
+            }
+        } catch (error) {
+            alert("Ocurrió un error al enviar el mensaje.");
+            console.error(error);
         }
     });
-
-    if (response.ok) {
-
-        message.style.display = "block";
-        form.reset();
-
-        setTimeout(() => {
-            window.location.href = "#contact";
-        }, 2000);
-
-    } else {
-        alert("Error al enviar el mensaje.");
-    }
 });
