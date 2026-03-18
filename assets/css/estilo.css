@@ -42,6 +42,15 @@ Table OF Contents
 	General
 \*------------------------------------*/
 
+/*------------------------------------*\
+	fonts
+\*------------------------------------*/
+
+@font-face {
+    font-family: "GothicFont";
+    src: url("fonts/gothic-valentine.ttf");
+}
+
 
 /* -- typography -- */
 
@@ -1931,6 +1940,7 @@ html {
     font-size:20px;
     margin-top:20px;
     color:#b01cfa;
+    font-family: "GothicFont", sans-serif;
     font-weight:bold;
     text-shadow:0 0 10px #b01cfa;
 }
