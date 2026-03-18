@@ -1902,9 +1902,10 @@ header {
 .portafolio-btn:hover,
 .cv-btn:hover {
     background: #000;
-    color: rgb(224, 112, 255);
+    color: rgb(237, 173, 255);
     text-decoration: none;
     transform: translateY(-2px);
+    text-shadow: #b916ff 0 0 10px;
 }
 
 html {
